@@ -1,2 +1,2 @@
 # sass-setup
-A simple boilerplate for sass
+A mini version of -> [KittyGiraudel's sass-boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
