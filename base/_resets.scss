@@ -16,6 +16,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 div,
 p,
 figure,
@@ -63,6 +65,14 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
+}
+
+/* Default styles for  buttons */
+button {
+  cursor: pointer;
+  min-width: 10ch;
+  min-height: 2.75rem; /* 44px */
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
