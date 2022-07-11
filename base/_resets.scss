@@ -10,23 +10,16 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-p,
-figure,
-blockquote,
-dl,
-dd {
+/* Remove default margin and padding */
+* {
   margin: 0;
   padding: 0;
   word-wrap: break-word;
+}
+
+/* Set line height to heading tags */
+:where(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.2;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

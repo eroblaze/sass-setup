@@ -3,8 +3,9 @@
  */
 // Convert 'px' to 'rem' unit
 @use "../abstracts/functions" as f;
+@use "../abstracts/variables" as v;
 
-$base-size: var(--base-size);
+$base-size: v.$base-size;
 $type-scale: 1.333; // initial scale
 $elements: h4, h3, h2, h1;
 
