@@ -5,5 +5,5 @@
 
 // Convert 'px' units to 'rem'
 @function rem($px) {
-  @return math.round(math.div($px, 16)) + rem;
+  @return math.div($px, 16) + rem;
 }

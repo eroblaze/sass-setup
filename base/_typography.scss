@@ -21,7 +21,7 @@ body {
 @each $el in $elements {
   $base-size: $base-size * $type-scale !global;
 
-  #{$el} {
+  .#{$el} {
     font-size: f.rem($base-size);
   }
 }

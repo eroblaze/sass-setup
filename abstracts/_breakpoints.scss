@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide breakpoints.
+// -----------------------------------------------------------------------------
+
+@use "sass:map";
+
+$breakpoints: (
+  "xs": 0px,
+  "sm": 30em,
+  // 480px
+  "md": 45em,
+  // 720px
+  "lg": 60em,
+  // 960px
+  "xl": 75em // 1200px,
+);
+
+@mixin breakpoint($bp, $w: min-width) {
+  $value: map.get($breakpoints, $bp);
+
+  @if $value == null {
+    @media ($w: $bp) {
+      @content;
+    }
+  } @else {
+    @media ($w: $value) {
+      @content;
+    }
+  }
+}

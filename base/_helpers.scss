@@ -1,10 +1,32 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
+@use "../abstracts/functions" as f;
+@use "../abstracts/breakpoints" as b;
 
 .container {
+  $w: #{f.rem(1000)};
+  width: 100%;
+  max-width: $w;
+  margin-inline: auto;
+
+  @include b.breakpoint($w, max-width) {
+    padding-inline: var(--general-padding);
+  }
 }
 
 .clickable {
   cursor: pointer;
+}
+
+// Hides content and makes it only available to screen readers.
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

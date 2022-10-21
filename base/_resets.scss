@@ -18,7 +18,7 @@
 }
 
 /* Set line height to heading tags */
-:where(h1, h2, h3, h4, h5, h6) {
+:where(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4) {
   line-height: 1.2;
 }
 
@@ -63,6 +63,8 @@ select {
 
 /* Default styles for  buttons */
 button {
+  display: inline-grid;
+  place-items: center;
   cursor: pointer;
   min-width: 10ch;
   min-height: 2.75rem; /* 44px */
